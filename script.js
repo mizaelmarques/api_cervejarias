@@ -1,6 +1,6 @@
 const url = "https://api.openbrewerydb.org/v1/breweries";
 let cervejarias = [];
-let favoritos = JSON.parse(localStorage.getItem("favoritos"));
+let favoritos = JSON.parse(localStorage.getItem("favoritos"))|| [];
 
 function displayCervejarias(cervejariasFiltradas) {
     const container = document.getElementById("container");
